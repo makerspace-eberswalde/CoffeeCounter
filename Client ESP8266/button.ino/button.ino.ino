@@ -1,3 +1,5 @@
+#include "secrets.h"
+
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>
 
@@ -19,7 +21,7 @@ void setup() {
   pinMode(green_led, OUTPUT);
   pinMode(button, INPUT_PULLUP);
 
-  WiFi.begin("WIFI-SSID-HERE", "WIFIKEY-HERE");   //WiFi connection
+  WiFi.begin(wifi_ssid, wifi_password);   //WiFi connection
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
     delay(500);
     Serial.println("Waiting for connection");
