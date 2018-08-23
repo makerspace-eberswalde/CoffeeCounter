@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+
+  coffeecounter-api:
+    container_name: coffeecounter-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './..:/usr/src/app'
+      - './../../../CoffeeCounter_data:/usr/CoffeeCounter_data'
+    network_mode: host
+    ports:
+      - '4001:4001'
+    environment:
+      - NODE_ENV=development
+    command: bash -c "npm install && npm run build && npm run production"

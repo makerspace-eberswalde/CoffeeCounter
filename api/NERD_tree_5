@@ -1,0 +1,35 @@
+" Press ? for help
+
+.. (up a dir)
+/home/mod/me-code/public/dm-tpl/
+▸ [   ]bin/
+▸ [   ]coverage/
+▸ [   ]dist/
+▸ [✗  ]docs/
+▸ [   ]example/
+▸ [   ]node_modules/
+▾ [✗  ]src/
+  ▸ [✗  ]tasks/
+  ▾ [✗  ]utils/
+    ▾ [✗  ]dmTpl/task/
+        [   ]index.d.ts
+        [✹  ]index.spec.ts
+        [   ]index.ts
+    ▸ [✗  ]nodejs/
+    [   ]index.spec.ts
+    [   ]index.ts
+▸ [   ]test/
+  [   ]mocha.coverage.opts
+  [   ]mocha.dist.opts
+  [   ]mocha.src.opts
+  [   ]nodemon.coverage.json
+  [   ]nodemon.json
+  [   ]nodemon.lint.json
+  [   ]nodemon.mocha.json
+  [   ]nohup.out
+  [✹  ]package-lock.json
+  [✹  ]package.json
+  [   ]README.md
+  [   ]templates.json
+  [   ]tsconfig.json
+  [✹  ]tslint.json

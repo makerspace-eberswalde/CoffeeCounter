@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "testing": {
+        "npm": {
+            "name": "dm-test"
+        },
+        "git": {
+            "https": "https://github.com/divramod/dm-test.git",
+            "ssh": "git@github.com:divramod/dm-test.git"
+        },
+        "path": "/tmp/test/dm-tpl"
+    }
+}

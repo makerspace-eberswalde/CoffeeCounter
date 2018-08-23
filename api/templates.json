@@ -1,0 +1,16 @@
+[
+    {
+        "name": "tpl-server-nodejs-api-graphql",
+        "label": "NodeJs Api GraphQL",
+        "maintype": "server",
+        "subtype": "nodejs",
+        "git": "git@gitlab.com:divramod/tpl-server-nodejs-graphql.git"
+    },
+    {
+        "name": "tpl-server-nodejs-typescript",
+        "label": "NodeJs Typescript",
+        "maintype": "server",
+        "subtype": "nodejs",
+        "git": "git@gitlab.com:divramod/tpl-server-nodejs-typescript.git"
+    }
+]

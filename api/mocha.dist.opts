@@ -1,0 +1,4 @@
+--require source-map-support/register
+--require mocha-clean
+--watch-extensions js
+dist/**/*.spec.js

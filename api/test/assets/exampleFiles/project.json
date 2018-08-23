@@ -1,0 +1,21 @@
+{
+    "name": "test",
+    "version": "1.1.1-1",
+    "projects": [
+        {
+            "name": "specific",
+            "path": "example/project/specific",
+            "type": "specific",
+            "entrypoint": "index.ts",
+            "active": "true"
+        },
+        {
+            "name": "tpl-server-nodejs-workers",
+            "path": "example/project/tpl-server-nodejs-workers",
+            "type": "tpl",
+            "upstream": "git@gitlab.com:divramod/tmpl-server-nodejs-workers.git",
+            "version": "0.0.1",
+            "active": "true"
+        }
+    ]
+}

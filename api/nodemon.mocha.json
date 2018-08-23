@@ -1,0 +1,5 @@
+{
+    "watch": ["src", "."],
+    "ext": "ts,json",
+    "exec": "./node_modules/.bin/ts-node -r tsconfig-paths/register -r source-map-support/register ./src/utils/mocha/run.ts"
+}

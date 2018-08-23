@@ -1,0 +1,15 @@
+dist
+package-lock.json
+yarn.lock
+node_modules
+.nyc_output
+coverage
+.idea
+.vscode
+*.log
+/* .env* */
+
+# vim
+*~
+*.swp
+*.swo
