@@ -1,3 +1,4 @@
+#include "secrets.h"
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>
 
@@ -17,7 +18,7 @@ void setup() {
   pinMode(green_led, OUTPUT);
   pinMode(button, INPUT_PULLUP);
 
-  WiFi.begin("SSID", "KEY");   //WiFi connection
+  WiFi.begin(wifi_ssid, wifi_password);   //WiFi connection
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
     delay(500);
     Serial.println("Waiting for connection");
@@ -41,7 +42,7 @@ void loop() {
       Serial.println("Red LED Turned ON");
       ///ab hier wir der POST abgesetzt
 
-      http.begin("API_URL");  //Specify request destination
+      http.begin(api_url);  //Specify request destination
       int httpCode = http.GET();  //Send the request
       request_running = true;
       if (httpCode > 0) { //Check the returning code
