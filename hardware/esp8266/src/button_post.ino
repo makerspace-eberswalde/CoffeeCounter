@@ -17,7 +17,7 @@ void setup() {
   pinMode(green_led, OUTPUT);
   pinMode(button, INPUT_PULLUP);
 
-  WiFi.begin("Hebewerk-e-V", "93506530615146776711");   //WiFi connection
+  WiFi.begin("SSID", "KEY");   //WiFi connection
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
     delay(500);
     Serial.println("Waiting for connection");
@@ -41,7 +41,7 @@ void loop() {
       Serial.println("Red LED Turned ON");
       ///ab hier wir der POST abgesetzt
 
-      http.begin("http://178.254.26.23:4001/button/1/click");  //Specify request destination
+      http.begin("API_URL");  //Specify request destination
       int httpCode = http.GET();  //Send the request
       request_running = true;
       if (httpCode > 0) { //Check the returning code
